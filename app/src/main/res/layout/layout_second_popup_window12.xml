@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/txt_device_name_in_popup_marker"
+        android:fontFamily="@font/iran_sans"
+        android:layout_gravity="start"
+        android:textSize="10sp"
+        android:textColor="@color/back_ground_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txt_imei_in_popup_marker"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:textColor="@color/low_gray"
+        android:fontFamily="@font/iran_sans"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_device_name_in_popup_marker"
+        android:layout_marginTop="12dp" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_show_status_device_in_popup_marker"
+            android:layout_width="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_imei_in_popup_marker"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cardCornerRadius="12dp"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:padding="16dp"
+                android:background="@drawable/back_ground_cardview"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/iv_status_in_popup_marker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/txt_show_status_in_popup_marker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/back_ground_login"
+                    android:fontFamily="@font/iran_sans"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/iv_status_in_popup_marker"
+                    app:layout_constraintBottom_toBottomOf="@+id/iv_status_in_popup_marker"
+                    app:layout_constraintStart_toEndOf="@+id/iv_status_in_popup_marker"
+                    android:textSize="13sp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_show_address_in_popup_marker"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/cv_show_status_device_in_popup_marker"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cardCornerRadius="12dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/back_ground_cardview"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_top_addreess_in_popup_marker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:text="@string/address_top"
+                    android:padding="5dp"
+                    android:autoLink="all"
+                    android:fontFamily="@font/iran_sans"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="SmallSp" />
+
+
+
+                <TextView
+                    android:id="@+id/txt_address_location_device_in_popup_marker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blue_low"
+                    android:layout_gravity="center"
+                    android:textSize="8sp"
+                    android:padding="5dp"
+                    android:autoLink="all"
+                    android:fontFamily="@font/iran_sans"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_top_addreess_in_popup_marker"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="SmallSp" />
+
+                <TextView
+                    android:id="@+id/txt_detail_address_location_device_in_popup_marker"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/back_ground_login"
+                    android:textSize="8sp"
+                    android:fontFamily="@font/iran_sans"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_top_addreess_in_popup_marker"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    tools:ignore="SmallSp" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_show_detail_information_in_popup_window"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/cv_show_address_in_popup_marker"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/back_ground_cardview"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_top_device_in_popup_marker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:text="@string/top_device"
+                    android:padding="5dp"
+                    android:autoLink="all"
+                    android:fontFamily="@font/iran_sans"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="SmallSp" />
+
+                <TextView
+                    android:id="@+id/txt_speed_device_in_popup_marker"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/low_gray"
+                    android:fontFamily="@font/iran_sans"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_top_device_in_popup_marker"
+                    android:text="@string/speed"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_detail_speed_device_in_popup_marker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/back_ground_login"
+                    android:fontFamily="@font/iran_sans"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintStart_toEndOf="@+id/txt_speed_device_in_popup_marker"
+                    app:layout_constraintTop_toTopOf="@+id/txt_speed_device_in_popup_marker"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_speed_device_in_popup_marker"
+                    android:text="@string/detail_speed"
+                    android:textSize="10sp"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_last_connect_device_in_popup_marker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/low_gray"
+                    android:fontFamily="@font/iran_sans"
+                    android:text="@string/last_connect"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_speed_device_in_popup_marker"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_detail_date_device_in_popup_marker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/back_ground_login"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/iran_sans"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/txt_last_connect_device_in_popup_marker"
+                    app:layout_constraintTop_toTopOf="@+id/txt_last_connect_device_in_popup_marker"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_last_connect_device_in_popup_marker"
+                    android:padding="8dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_last_location_device_in_popup_marker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/low_gray"
+                    android:fontFamily="@font/iran_sans"
+                    android:text="@string/last_location"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_last_connect_device_in_popup_marker"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_detail_last_location_device_in_popup_marker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/back_ground_login"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/iran_sans"
+                    android:padding="8dp"
+                    android:textSize="10sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/txt_last_location_device_in_popup_marker"
+                    app:layout_constraintTop_toTopOf="@+id/txt_last_location_device_in_popup_marker"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_last_location_device_in_popup_marker"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_speed_move_in_monitor_fragment"
+            android:backgroundTint="@color/background_icon_osm"
+            android:text="@string/move_speed"
+            android:inputType="textCapCharacters"
+            android:fontFamily="@font/iran_sans"
+            android:textSize="12sp"
+            app:iconGravity="textStart"
+            app:icon="@drawable/baseline_devices_other_24"
+            app:iconPadding="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/cv_show_detail_information_in_popup_window"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+    <ProgressBar
+        android:id="@+id/progress_in_window_popup_window"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_speed_move_in_monitor_fragment"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

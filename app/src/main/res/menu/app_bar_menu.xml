@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/serviceCourse"
+        android:icon="@drawable/trackinglocation"
+        android:title="سرویس های دوره ای" />
+
+    <item android:id="@+id/addValidity"
+        android:icon="@drawable/cars_nav"
+        android:enabled="true"
+        android:title="افزایش اعتبار" />
+
+    <item android:id="@+id/plan"
+        android:icon="@drawable/baseline_map_24"
+        android:enabled="true"
+        android:title="پلن ها" />
+
+    <item android:id="@+id/alerts"
+        android:icon="@drawable/baseline_car_repair_24"
+        android:enabled="true"
+        android:title="هشدارها" />
+
+    <item android:id="@+id/notification"
+        android:icon="@drawable/baseline_car_repair_24"
+        android:enabled="true"
+        android:title="اعلان ها" />
+
+    <item android:id="@+id/paymentPay"
+        android:icon="@drawable/baseline_car_repair_24"
+        android:enabled="true"
+        android:title="تراکنش های انجام شده" />
+
+    <item android:id="@+id/editProfile"
+        android:icon="@drawable/baseline_car_repair_24"
+        android:enabled="true"
+        android:title="ویرایش پروفایل" />
+
+    <item android:id="@+id/changePass"
+        android:icon="@drawable/baseline_car_repair_24"
+        android:enabled="true"
+        android:title="تغییر کلمه عبور" />
+
+    <item android:id="@+id/reminder"
+        android:icon="@drawable/baseline_car_repair_24"
+        android:enabled="true"
+        android:title="یادآوری ها" />
+
+    <item android:id="@+id/speed"
+        android:icon="@drawable/baseline_car_repair_24"
+        android:enabled="true"
+        android:title="سرعت لحظه ای" />
+
+    <item android:id="@+id/getAlertSetting"
+        android:icon="@drawable/baseline_car_repair_24"
+        android:enabled="true"
+        android:title="تنظیمات دریافت هشدار" />
+
+    <item android:id="@+id/contactUs"
+        android:icon="@drawable/baseline_car_repair_24"
+        android:enabled="true"
+        android:title="تماس با ما" />
+
+    <item android:id="@+id/exit"
+        android:icon="@drawable/baseline_car_repair_24"
+        android:enabled="true"
+        android:title="خروج" />
+
+
+</menu>

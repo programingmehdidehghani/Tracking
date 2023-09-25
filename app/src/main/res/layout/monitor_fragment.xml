@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.monitor.MonitorFragment">
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/map_in_monitor_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:touchscreenBlocksFocus="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <FrameLayout
+        android:id="@+id/fr_menu_map_in_monitor_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:background="@drawable/click_cancel_change_view_item_map"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btn_details_item_map_in_monitor_fragment"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/menu_for_map"
+            />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fr_change_map_in_monitor_fragment"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="8dp"
+        android:padding="3dp"
+        android:background="@drawable/click_cancel_change_view_item_map"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btn_change_map_in_monitor_fragment"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/map_app_ux_icon"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fr_zoom_in_in_monitor_fragment"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="3dp"
+        android:background="@drawable/click_cancel_change_view_item_map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fr_change_map_in_monitor_fragment">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btn_zoom_in_in_monitor_fragment"
+            android:src="@drawable/plus_new_icon"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:layout_width="18dp"
+            android:layout_height="20dp"
+            />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fr_zoom_out_in_monitor_fragment"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="10dp"
+        android:padding="3dp"
+        android:background="@drawable/click_cancel_change_view_item_map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fr_zoom_in_in_monitor_fragment">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btn_zoom_out_in_monitor_fragment"
+            android:src="@drawable/minus_round_icon"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:layout_width="18dp"
+            android:layout_height="20dp"
+            />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fr_get_fences_in_monitor_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="3dp"
+        android:background="@drawable/click_cancel_change_view_item_map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fr_zoom_out_in_monitor_fragment">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btn_get_fences_gon_in_monitor_fragment"
+            android:background="@drawable/map_navigation_pin_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fr_add_polygon_in_monitor_fragment"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="3dp"
+        android:background="@drawable/click_cancel_change_view_item_map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fr_get_fences_in_monitor_fragment">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btn_add_poly_gon_in_monitor_fragment"
+            android:background="@drawable/draw_polygon_icon"
+            android:rotationX="180"
+            android:rotationY="180"
+            android:layout_gravity="center"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fr_add_circle_in_monitor_fragment"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="10dp"
+        android:padding="3dp"
+        android:background="@drawable/click_cancel_change_view_item_map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fr_add_polygon_in_monitor_fragment">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btn_add_circle_gon_in_main_activity"
+            android:background="@drawable/circle_draw_color"
+            android:layout_gravity="center"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            />
+
+    </FrameLayout>
+
+<!--    <FrameLayout
+        android:id="@+id/fm_draw_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        app:layout_constraintStart_toEndOf="@+id/fr_change_map_in_main_activity"
+        app:layout_constraintBottom_toBottomOf="@+id/fr_change_map_in_main_activity"
+        app:layout_constraintTop_toTopOf="@+id/fr_change_map_in_main_activity">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_draw_poly_line_in_main_activity"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="draw"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toTopOf="@+id/fm_draw_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/fm_draw_btn"
+        app:layout_constraintStart_toEndOf="@+id/fm_draw_btn">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Finish"/>
+
+
+    </FrameLayout>-->
+
+    <ProgressBar
+        android:id="@+id/progress_in_monitor_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

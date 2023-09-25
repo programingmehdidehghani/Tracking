@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/theme"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/txt_enter_number_in_dialog_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="visible"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="18dp"
+        android:text="ایمیل خود را وارد نمایید"/>
+
+    <EditText
+        android:id="@+id/et_email_in_dialog_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:padding="8dp"
+        android:visibility="visible"
+        android:maxLength="30"
+        android:background="@drawable/background_edit_text_change_pass"
+        app:layout_constraintTop_toBottomOf="@+id/txt_enter_number_in_dialog_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <EditText
+        android:id="@+id/et_first_confirm_in_dialog_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/background_edit_text_change_pass"
+        android:maxLength="1"
+        android:visibility="gone"
+        android:inputType="phone"
+        android:padding="5dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/btn_confirm_pass_in_dialog_email"
+        app:layout_constraintEnd_toStartOf="@+id/gl_first_in_dialog_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_enter_number_in_dialog_email"
+        />
+
+
+    <EditText
+        android:id="@+id/et_second_confirm_in_dialog_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/background_edit_text_change_pass"
+        android:maxLength="1"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:inputType="phone"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/btn_confirm_pass_in_dialog_email"
+        app:layout_constraintStart_toEndOf="@+id/gl_first_in_dialog_email"
+        app:layout_constraintEnd_toStartOf="@+id/gl_second_in_dialog_email"
+        app:layout_constraintTop_toBottomOf="@+id/txt_enter_number_in_dialog_email"
+        />
+
+    <EditText
+        android:id="@+id/et_third_confirm_in_dialog_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/background_edit_text_change_pass"
+        android:maxLength="1"
+        android:padding="5dp"
+        android:inputType="phone"
+        android:visibility="gone"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/btn_confirm_pass_in_dialog_email"
+        app:layout_constraintStart_toEndOf="@+id/gl_second_in_dialog_email"
+        app:layout_constraintEnd_toStartOf="@+id/gl_third_in_dialog_email"
+        app:layout_constraintTop_toBottomOf="@+id/txt_enter_number_in_dialog_email"
+        />
+
+    <EditText
+        android:id="@+id/et_fourth_confirm_in_dialog_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/background_edit_text_change_pass"
+        android:maxLength="1"
+        android:visibility="gone"
+        android:inputType="phone"
+        android:padding="5dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/btn_confirm_pass_in_dialog_email"
+        app:layout_constraintStart_toEndOf="@+id/gl_third_in_dialog_email"
+        app:layout_constraintEnd_toStartOf="@+id/gl_fourth_in_dialog_email"
+        app:layout_constraintTop_toBottomOf="@+id/txt_enter_number_in_dialog_email"
+        />
+
+    <EditText
+        android:id="@+id/et_fifth_confirm_in_dialog_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/background_edit_text_change_pass"
+        android:maxLength="1"
+        android:inputType="phone"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/btn_confirm_pass_in_dialog_email"
+        app:layout_constraintStart_toEndOf="@+id/gl_fourth_in_dialog_email"
+        app:layout_constraintEnd_toStartOf="@+id/gl_fifth_in_dialog_email"
+        app:layout_constraintTop_toBottomOf="@+id/txt_enter_number_in_dialog_email"
+        />
+
+    <EditText
+        android:id="@+id/et_sixth_confirm_in_dialog_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/background_edit_text_change_pass"
+        android:maxLength="1"
+        android:inputType="phone"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/btn_confirm_pass_in_dialog_email"
+        app:layout_constraintStart_toEndOf="@+id/gl_fifth_in_dialog_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_enter_number_in_dialog_email"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_confirm_pass_in_dialog_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="تایید"
+        android:backgroundTint="@color/purple_700"
+        android:layout_marginTop="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_email_in_dialog_email"
+        app:layout_constraintEnd_toStartOf="@+id/gl_end_in_dialog_email"
+        app:layout_constraintStart_toEndOf="@+id/gl_start_in_dialog_email"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_confirm_verify_code_in_dialog_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="تایید کد"
+        android:visibility="gone"
+        android:backgroundTint="@color/purple_700"
+        android:layout_marginTop="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_email_in_dialog_email"
+        app:layout_constraintEnd_toStartOf="@+id/gl_end_in_dialog_email"
+        app:layout_constraintStart_toEndOf="@+id/gl_start_in_dialog_email"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ProgressBar
+        android:id="@+id/progress_in_dialog_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_start_in_dialog_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.23"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_end_in_dialog_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.77"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_first_in_dialog_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.166"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_second_in_dialog_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.329"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_third_in_dialog_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.489"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_fourth_in_dialog_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.649"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_fifth_in_dialog_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.818"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

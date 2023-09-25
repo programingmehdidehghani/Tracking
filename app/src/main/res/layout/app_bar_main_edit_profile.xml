@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.MyApplication.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_in_edit_profile_activity"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/back_ground_login"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/txt_top_profile_in_edit_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/iran_sans"
+                    android:textColor="@color/whiteLow"
+                    app:layout_constraintEnd_toStartOf="@+id/gl_end_in_edit_profile"
+                    app:layout_constraintStart_toEndOf="@+id/gl_start_in_edit_profile"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:text="@string/top_activity"/>
+
+                <!--<androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_back_press_in_edit_profile_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:src="@drawable/baseline_arrow_back_ios_new_24"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/txt_top_profile_in_edit_profile"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_top_profile_in_edit_profile"
+                    />-->
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_main_menu_in_edit_profile"
+                    android:src="@drawable/baseline_menu_24"
+                    android:padding="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/txt_top_profile_in_edit_profile"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_top_profile_in_edit_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gl_start_in_edit_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.4"/>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gl_end_in_edit_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.6"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/activity_edit_profile"  />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

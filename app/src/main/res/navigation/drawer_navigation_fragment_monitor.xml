@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_navigation_fragment_monitor"
+    app:startDestination="@id/showDeviceFragmentMonitor">
+
+    <fragment
+        android:id="@+id/showDeviceFragmentMonitor"
+        android:name="com.example.mapproject.ui.devicesFragment.DevicesFragment"
+        android:label="fragment_devices"
+        tools:layout="@layout/fragment_devices" >
+        <action
+            android:id="@+id/action_showDeviceFragmentMonitor_to_monitorFragment2"
+            app:destination="@id/monitorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/groupFragmentMonitor"
+        android:name="com.example.mapproject.ui.fragments.GroupFragment"
+        android:label="fragment_group"
+        tools:layout="@layout/fragment_group" />
+    <fragment
+        android:id="@+id/fencesFragmentMonitor"
+        android:name="com.example.mapproject.ui.fragments.ShowFencesFragment"
+        android:label="ShowFencesFragment"
+        tools:layout="@layout/fragment_show_fences"/>
+    <fragment
+        android:id="@+id/monitorFragment"
+        android:name="com.example.mapproject.ui.monitor.MonitorFragment"
+        android:label="monitor_fragment"
+        tools:layout="@layout/monitor_fragment" >
+        <action
+            android:id="@+id/action_monitorFragment2_to_showDeviceFragmentMonitor"
+            app:destination="@id/showDeviceFragmentMonitor" />
+        <action
+            android:id="@+id/action_monitorFragment2_to_fencesFragmentMonitor"
+            app:destination="@id/fencesFragmentMonitor" />
+        <action
+            android:id="@+id/action_monitorFragment2_to_groupFragmentMonitor"
+            app:destination="@id/groupFragmentMonitor" />
+    </fragment>
+
+
+</navigation>

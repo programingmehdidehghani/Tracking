@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/theme"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.ProfileFragment">
+
+
+    <ImageView
+        android:id="@+id/iv_profile_in_fragment_profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="18dp"
+        android:src="@drawable/baseline_person_24"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/txt_user_name_in_profile_fragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:textColor="@color/whiteLow"
+        android:textSize="15sp"
+        android:text="نام کاربری"
+        app:layout_constraintTop_toBottomOf="@+id/iv_profile_in_fragment_profile"
+        app:layout_constraintStart_toEndOf="@+id/gl_middle_in_dashboard_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="22dp"
+        />
+
+    <EditText
+        android:id="@+id/et_user_name_in_profile_fragment"
+        android:layout_width="0dp"
+        android:enabled="false"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="22dp"
+        android:textSize="16sp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_marginEnd="22dp"
+        android:padding="8dp"
+        android:background="@drawable/background_edit_text_change_pass"
+        app:layout_constraintTop_toBottomOf="@+id/txt_user_name_in_profile_fragment"
+        app:layout_constraintStart_toEndOf="@+id/gl_middle_in_dashboard_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/txt_email_in_profile_fragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:textSize="15sp"
+        android:text="پست الکترونیک"
+        android:textColor="@color/whiteLow"
+        app:layout_constraintTop_toBottomOf="@+id/et_user_name_in_profile_fragment"
+        app:layout_constraintStart_toEndOf="@+id/gl_middle_in_dashboard_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="22dp"
+        />
+
+    <EditText
+        android:id="@+id/et_email_in_profile_fragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        android:textSize="16sp"
+        android:enabled="false"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:padding="8dp"
+        android:background="@drawable/background_edit_text_change_pass"
+        app:layout_constraintTop_toBottomOf="@+id/txt_email_in_profile_fragment"
+        app:layout_constraintStart_toEndOf="@+id/gl_middle_in_dashboard_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/txt_location_in_profile_fragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:textSize="15sp"
+        android:text="موقعیت زمانی"
+        android:textColor="@color/whiteLow"
+        app:layout_constraintTop_toBottomOf="@+id/et_email_in_profile_fragment"
+        app:layout_constraintStart_toEndOf="@+id/gl_middle_in_dashboard_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="22dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinner_location_in_profile_fragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:spinnerMode="dropdown"
+        android:gravity="center"
+        android:textColor="@color/whiteLow"
+        android:layout_marginStart="22dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_location_in_profile_fragment"
+        app:layout_constraintStart_toEndOf="@+id/gl_middle_in_dashboard_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"
+        />
+
+    <TextView
+        android:id="@+id/txt_capacity_in_profile_fragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:textSize="15sp"
+        android:text="ظرفیت"
+        android:textColor="@color/whiteLow"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_location_in_profile_fragment"
+        app:layout_constraintStart_toEndOf="@+id/gl_middle_in_dashboard_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="22dp"
+        />
+
+   <RadioGroup
+       android:id="@+id/radio_capacity_in_profile_fragment"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toBottomOf="@+id/txt_capacity_in_profile_fragment"
+       app:layout_constraintStart_toEndOf="@+id/gl_middle_in_dashboard_activity"
+       app:layout_constraintEnd_toEndOf="parent"
+       android:layout_marginEnd="22dp"
+       android:layout_marginTop="12dp"
+       />
+
+
+    <TextView
+        android:id="@+id/txt_temperature_in_profile_fragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:textSize="15sp"
+        android:text="دما"
+        android:textColor="@color/whiteLow"
+        app:layout_constraintTop_toBottomOf="@+id/radio_capacity_in_profile_fragment"
+        app:layout_constraintStart_toEndOf="@+id/gl_middle_in_dashboard_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="22dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/radio_temperature_in_profile_fragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txt_temperature_in_profile_fragment"
+        app:layout_constraintStart_toEndOf="@+id/gl_middle_in_dashboard_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="22dp"
+        android:layout_marginTop="12dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/txt_phone_number_in_profile_fragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:textSize="15sp"
+        android:text="پست الکترونیک"
+        android:textColor="@color/whiteLow"
+        app:layout_constraintTop_toBottomOf="@+id/iv_profile_in_fragment_profile"
+        app:layout_constraintEnd_toStartOf="@+id/gl_middle_in_dashboard_activity"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="22dp"
+        />
+
+    <EditText
+        android:id="@+id/et_phone_number_in_profile_fragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:enabled="false"
+        android:padding="8dp"
+        android:background="@drawable/background_edit_text_change_pass"
+        app:layout_constraintTop_toBottomOf="@+id/txt_phone_number_in_profile_fragment"
+        app:layout_constraintEnd_toStartOf="@+id/gl_middle_in_dashboard_activity"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/txt_name_in_profile_fragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:textSize="15sp"
+        android:text="نام"
+        android:textColor="@color/whiteLow"
+        app:layout_constraintTop_toBottomOf="@+id/et_phone_number_in_profile_fragment"
+        app:layout_constraintEnd_toStartOf="@+id/gl_middle_in_dashboard_activity"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="22dp"
+        />
+
+    <EditText
+        android:id="@+id/et_name_in_profile_fragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        android:singleLine="true"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:background="@drawable/background_edit_text_change_pass"
+        app:layout_constraintTop_toBottomOf="@+id/txt_name_in_profile_fragment"
+        app:layout_constraintEnd_toStartOf="@+id/gl_middle_in_dashboard_activity"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/txt_map_in_profile_fragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:textSize="15sp"
+        android:text="نقشه"
+        android:textColor="@color/whiteLow"
+        app:layout_constraintTop_toBottomOf="@+id/et_name_in_profile_fragment"
+        app:layout_constraintEnd_toStartOf="@+id/gl_middle_in_dashboard_activity"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="22dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinner_map_in_fragment_profile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:spinnerMode="dropdown"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="22dp"
+        android:textColor="@color/whiteLow"
+        app:layout_constraintTop_toBottomOf="@+id/txt_map_in_profile_fragment"
+        app:layout_constraintEnd_toStartOf="@+id/gl_middle_in_dashboard_activity"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/txt_distance_in_profile_fragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:textSize="15sp"
+        android:text="فاصله"
+        android:textColor="@color/whiteLow"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_map_in_fragment_profile"
+        app:layout_constraintEnd_toStartOf="@+id/gl_middle_in_dashboard_activity"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="22dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/radio_distance_in_profile_fragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txt_distance_in_profile_fragment"
+        app:layout_constraintEnd_toStartOf="@+id/gl_middle_in_dashboard_activity"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginTop="12dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_change_profile_information_in_profile_fragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="12dp"
+        android:textSize="22sp"
+        android:backgroundTint="@color/blue_low"
+        android:text="ثبت"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ProgressBar
+        android:id="@+id/progress_in_dashboard_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_middle_in_dashboard_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

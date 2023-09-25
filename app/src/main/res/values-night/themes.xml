@@ -1,0 +1,60 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MapProject" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:itemBackground">@color/DarkBlue</item>
+        <item name="android:textColor">@color/whiteLow</item>
+
+    </style>
+
+
+
+    <style name="spinnerItemStyle" parent="android:Widget.TextView.SpinnerItem">
+    </style>
+
+    <style name="spinnerDropDownItemStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+    </style>
+
+    <style name="text_active">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/whiteLow</item>
+    </style>
+
+    <style name="text_inactive">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/whiteLow</item>
+    </style>
+
+    <style name="Widget.BottomNavigationView"
+        parent="Widget.Design.BottomNavigationView">
+        <item name="fontFamily">@font/iran_sans</item>
+        <item name="android:minHeight">0dp</item>
+    </style>
+
+    <style name="Widget.RadioButton"
+        parent="Widget.Material3.CompoundButton.RadioButton">
+        <item name="fontFamily">@font/iran_sans</item>
+        <item name="colorControlNormal">@color/whiteLow</item>
+        <item name="colorControlActivated">@color/RedLow</item>
+    </style>
+
+    <style name="Widget.Material3.NavigationView."
+        parent="Widget.Material3.NavigationView." tools:ignore="ResourceCycle">
+        <item name="fontFamily">@font/iran_sans</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+
+</resources>

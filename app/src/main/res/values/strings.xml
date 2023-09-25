@@ -1,0 +1,198 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name" translatable="false">Koja</string>
+    <string name="txt_top_login" translatable="false">Online Tracking Application</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+
+    ###### main Fragment
+    <string name="txt_users">Accounts</string>
+    <string name="txt_device">Devices</string>
+    <string name="txt_history">History</string>
+    <string name="txt_monitors">Monitor</string>
+
+    ###### login activity
+    <string name="txt_user_name_login" translatable="true">UserName</string>
+    <string name="txt_password_login" translatable="true">PassWord</string>
+    <string name="txt_btn_login" translatable="true">Login</string>
+    <string name="txt_email_phone" translatable="true">Email or Mobile</string>
+    <string name="txt_forget_pass" translatable="true">I Forgot My Password</string>
+    <string name="txt_top_pass" translatable="true">Forget Password</string>
+    <string name="txt_mobile_number_user_name" translatable="false">Mobile number or username</string>
+    <string name="txt_enter_user" translatable="false">Users Sign in</string>
+    <string name="txt_send_code" translatable="false">Send Code</string>
+    <string name="txt_verify_code_user" translatable="false">Enter the 6 Digit Code Sent to %1$s</string>
+    <string name="txt_recode_again_verify_code" translatable="false">Resend Code After %1$s Seconds</string>
+    <string name="txt_change_user_name" translatable="false">Change UserName</string>
+    <string name="txt_new_pass" translatable="false">New PassWord</string>
+    <string name="txt_confirm_new_pass" translatable="false">Confirm NewPassWord</string>
+    <string name="txt_confirm_code" translatable="false">Confirm Code</string>
+    <string name="txt_resend_code_again">Resend the code</string>
+    <string name="txt_user_name_pass_word_is_empty">UserName or PassWord is Empty</string>
+    <string name="txt_forget_pass_user_name_is_empty">UserName or MobilePhone is Empty</string>
+
+    ###### main activity
+    <string name="setting_menu">Setting</string>
+    <string name="wallet_menu">Wallet</string>
+    <string name="orders_menu">Orders</string>
+    <string name="support_menu">Support</string>
+    <string name="exit_menu">Exit</string>
+
+
+    ###### EditProfile activity
+    <string name="top_activity">Edit Profile</string>
+    <string name="user_name">UserName:</string>
+    <string name="email">Email:</string>
+    <string name="phone_number">Mobile:</string>
+    <string name="user_last_name">Name:</string>
+    <string name="location">TimeZone:</string>
+    <string name="map">Map:</string>
+    <string name="capacity">Capacity:</string>
+    <string name="distance">Distance:</string>
+    <string name="temperature">Temperature:</string>
+    <string name="save">Submit</string>
+
+    ## translate Type Maps, TimeZone, Opacity, Distance, Temperture
+    <string name="open_street_map">Open Street Map</string>
+    <string name="google_streets">Google Map(Street)</string>
+    <string name="google_terrain">Google Map(Terrain)</string>
+    <string name="google_satellite">Google Map(Satellite)</string>
+    <string name="google_hybrid">Google Map(Hybrid)</string>
+    <string name="google_traffic">Google Map(Traffic)</string>
+    <string name="liter">Liter</string>
+    <string name="gallon">U.S Gallon</string>
+
+    ###### Popup Menu EditProfile
+    <string name="change_phone_number">Change Phone Number</string>
+    <string name="change_email">Change Email</string>
+    <string name="change_main_pass_word">Change Password</string>
+    <string name="change_back_ground">Change Background</string>
+    <string name="wallet_drawer_edit_profile">Wallet</string>
+    <string name="alert_drawer_edit_profile">Alerts</string>
+    <string name="message_drawer_edit_profile">Messages</string>
+    <string name="orders_drawer_edit_profile">Orders</string>
+    <string name="support_drawer_edit_profile">Support</string>
+
+
+    ###### changePassword Activity
+    <string name="top_change_pass">Change Password</string>
+    <string name="change_current_pass">Current Password</string>
+    <string name="new_pass">New Password</string>
+    <string name="confirm_pass">Confirm New Password</string>
+    <string name="btn_confirm">Save</string>
+
+
+    ###### changeEmail Activity
+    <string name="top_change_email">Change Email</string>
+    <string name="enter_email">Your Email</string>
+    <string name="confirm_first_email">Submit</string>
+    <string name="confirm_verify_code">Submit Code</string>
+    <string name="write_your_verify_code">write your verify code in your email</string>
+    <string name="toast_write_your_verify_code">write your verify code</string>
+    <string name="toast_write_your_email">write your Email</string>
+
+
+    ###### changePhoneNumber Activity
+    <string name="top_change_phone_number">Change Phone Number</string>
+    <string name="write_phone_number">write your phone number</string>
+    <string name="confirm_first_phone_number">Submit</string>
+    <string name="confirm_verify_code_phone_number">Submit Code</string>
+    <string name="write_your_verify_code_phone_number">write your verify code</string>
+    <string name="toast_write_your_verify_code_phone_number">write your verify code</string>
+    <string name="toast_write_your_email_phone_number">write your phone number</string>
+
+
+    ###### alerts Activity
+    <string name="top_alerts">Alerts</string>
+    <string name="device_name">Device Name:</string>
+    <string name="device_imei">IMEI:</string>
+    <string name="type">Type:</string>
+    <string name="device_location">Location:</string>
+    <string name="send_time">Send Time:</string>
+    <string name="device_status">Status:</string>
+    <string name="device_Action">Action:</string>
+    <string name="read_at">Read</string>
+    <string name="unread_at">Unread</string>
+
+    ## types alerts
+    <string name="all_alerts">All</string>
+    <string name="over_speed">Over Speed</string>
+    <string name="vibration">Vibration</string>
+    <string name="general">General</string>
+    <string name="sos">SOS</string>
+    <string name="fall">Fall Down</string>
+    <string name="low_battery">Low Battery</string>
+    <string name="power_off">Power Off</string>
+    <string name="power_on">Power On</string>
+    <string name="door">Door</string>
+    <string name="geofence_enter">Geofence Enter</string>
+    <string name="geofence_exit">Geofence Exit</string>
+    <string name="accident">Accident</string>
+    <string name="hard_acceleration">Hard Acceleration</string>
+    <string name="hard_braking">Hard Braking</string>
+    <string name="hard_cornering">Hard Cornering</string>
+    <string name="power_cut">Power Cut</string>
+    <string name="tampering">Tampering</string>
+    <string name="acc_off">Acc Off</string>
+    <string name="acc_on">Acc On</string>
+
+    ###### CommonStrings
+    <string name="no_internet">No Internet Connection.!</string>
+
+
+    ###### Monitor Fragment
+    <string name="change_map">change map</string>
+    <string name="add_polygon">polygon</string>
+    <string name="devices">Devices</string>
+    <string name="device">Device</string>
+    <string name="situation">situation Device</string>
+    <string name="default_device">Default</string>
+    <string name="status_device_offline">Offline</string>
+    <string name="status_device_moving">Moving</string>
+    <string name="status_device_online">Park</string>
+    <string name="top_device">Device</string>
+    <string name="speed">Speed</string>
+    <string name="detail_speed">km/h %1$s</string>
+    <string name="last_connect">last Connect</string>
+    <string name="last_location">last Location</string>
+    <string name="name_poly_gon_dialog">name</string>
+    <string name="description_poly_gon">description</string>
+    <string name="save_poly_gon">save</string>
+    <string name="cancel">cancel</string>
+    <string name="choose_color">choose color</string>
+    <string name="toast_select_color">select color</string>
+    <string name="top_show_fence">Fence</string>
+    <string name="fence_no">There is no fence!</string>
+    <string name="menu_fences">Fences</string>
+    <string name="menu_devices">Devices</string>
+    <string name="menu_group">Groups</string>
+    <string name="address_location">Address</string>
+    <string name="toast_polygon">draw geofence on the map</string>
+    <string name="toast_circle">draw circle geofence on the map</string>
+    <string name="loading">Loading</string>
+    <string name="address_top">Address</string>
+    <string name="move_speed">Track to Device</string>
+
+
+    ###### Device Fragment
+    <string name="status_online">online</string>
+    <string name="status_offline">offline</string>
+    <string name="select_group">Select</string>
+    <string name="search">Search</string>
+    <string name="toast_result_search_group">Nothing found</string>
+
+
+    ###### Group Fragment
+    <string name="et_name_group">Name Group</string>
+    <string name="toast_enter_name_group">Write the name of the group</string>
+    <string name="toast_permission_delete_group">you don\'t have permission delete this group</string>
+    <string name="toast_permission_edit_group">you don\'t have permission edit this group</string>
+
+    ###### History Fragment
+    <string name="start_date">Start</string>
+    <string name="end_date">End</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="last_week">Last Week</string>
+    <string name="reset">Reset</string>
+
+</resources>

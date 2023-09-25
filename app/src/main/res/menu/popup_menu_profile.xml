@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/setting"
+        app:showAsAction="never"
+        android:icon="@drawable/vector_settings"
+        android:title="@string/setting_menu" />
+
+    <item
+        android:id="@+id/wallet"
+        app:showAsAction="never"
+        android:icon="@drawable/vectore_wallet"
+        android:title="@string/wallet_menu" />
+
+    <item
+        android:id="@+id/orders"
+        app:showAsAction="never"
+        android:icon="@drawable/baseline_stacked_line_chart_24"
+        android:title="@string/orders_menu" />
+
+    <item
+        android:id="@+id/support"
+        app:showAsAction="never"
+        android:icon="@drawable/vectore_support"
+        android:title="@string/support_menu" />
+
+    <item
+        android:id="@+id/exit"
+        app:showAsAction="never"
+        android:icon="@drawable/baseline_exit_to_app_24"
+        android:title="@string/exit_menu" />
+</menu>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/monitorFragment"
+        android:icon="@drawable/_135924_location_map_navigation_pointer_icon"
+        android:title="@string/txt_monitors" />
+
+    <item android:id="@+id/historyFragment"
+        android:icon="@drawable/_665015_car_side_icon"
+        android:enabled="true"
+        android:title="@string/txt_history" />
+
+    <item android:id="@+id/mapFragment"
+        android:icon="@drawable/baseline_map_24"
+        android:enabled="true"
+        android:title="@string/txt_device" />
+
+    <item android:id="@+id/serviceCarFragment"
+        android:icon="@drawable/baseline_car_repair_24"
+        android:enabled="true"
+        android:title="@string/txt_users" />
+</menu>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="@string/open_street_map"
+        android:id="@+id/open_street_map"
+        />
+
+    <item android:id="@+id/road_map"
+        android:enabled="true"
+        android:title="@string/google_streets" />
+
+    <item android:id="@+id/map_dem"
+        android:enabled="true"
+        android:title="@string/google_terrain" />
+
+    <item android:id="@+id/map_satellite"
+        android:enabled="true"
+        android:title="@string/google_satellite" />
+
+    <item android:id="@+id/google_hybrid"
+        android:enabled="true"
+        android:title="@string/google_hybrid" />
+
+    <item android:id="@+id/google_traffic"
+        android:enabled="true"
+        android:title="@string/google_traffic" />
+
+</menu>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="8dp"
+    android:layout_margin="5dp"
+    app:cardPreventCornerOverlap="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_parent_in_show_status_device_in_all_detail_items"
+        android:layout_width="match_parent"
+        android:padding="8dp"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_show_status_device_in_all_detail_items"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/txt_device_name_in_show_status_device_in_all_detail_items"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue_low"
+            android:fontFamily="@font/iran_sans"
+            android:textSize="12sp"
+            android:layout_marginStart="12dp"
+            app:layout_constraintBottom_toBottomOf="@id/iv_show_status_device_in_all_detail_items"
+            app:layout_constraintTop_toTopOf="@+id/iv_show_status_device_in_all_detail_items"
+            app:layout_constraintStart_toEndOf="@+id/iv_show_status_device_in_all_detail_items"
+            />
+
+        <TextView
+            android:id="@+id/txt_connect_at_in_show_status_device_in_all_detail_items"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/whiteLow"
+            android:fontFamily="@font/iran_sans"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_show_status_device_in_all_detail_items"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

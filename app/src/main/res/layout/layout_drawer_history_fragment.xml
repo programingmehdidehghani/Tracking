@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_in_history_fragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:openDrawer="start"
+    android:layout_gravity="start"
+    android:fitsSystemWindows="false">
+
+    <include
+        android:id="@+id/layout_view_in_drawer_history_fragment"
+        layout="@layout/history_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="start">
+
+
+        <include
+            android:id="@+id/app_bar_header_history_fragment"
+            layout="@layout/layout_header_menu_monitor_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:background="@color/back_ground_login"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txt_device_in_history_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/device"
+                android:textSize="12sp"
+                android:textColor="@color/whiteLow"
+                android:fontFamily="@font/iran_sans"
+                android:layout_marginStart="12dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+            <RelativeLayout
+                android:id="@+id/rl_select_device_in_history_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_device_in_history_fragment">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_device_history_fragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/DarkBlue"
+                        android:fontFamily="@font/iran_sans"
+                        android:gravity="center_vertical|start"
+                        android:paddingStart="12dp"
+                        android:inputType="textCapCharacters"
+                        android:paddingEnd="12dp"
+                        android:text="@string/select_group"
+                        android:textColor="@color/whiteLow"
+                        android:textSize="12sp"
+                        app:icon="@drawable/baseline_keyboard_arrow_down_24"
+                        app:iconGravity="start"
+                        app:iconPadding="4dp" />
+
+                </FrameLayout>
+
+                <!-- MaterialButton with text -->
+
+
+                <FrameLayout
+                    android:id="@+id/fr_image_button_delete_device_in_history_fragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginEnd="8dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    >
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/my_button_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_close_24"
+                        />
+                </FrameLayout>
+
+
+
+            </RelativeLayout>
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_search_group_in_history_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginStart="12dp"
+                android:textColor="@color/dark_gray"
+                android:textColorHint="@color/dark_gray"
+                android:maxLength="40"
+                android:drawableStart="@drawable/baseline_search_24"
+                android:hint="@string/search"
+                android:focusable="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:fontFamily="@font/iran_sans"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="8dp"
+                android:visibility="gone"
+                android:textSize="12sp"
+                android:background="@drawable/background_dark_back_ground"
+                app:layout_constraintBottom_toTopOf="@+id/rv_group_in_history_fragment"
+                app:layout_constraintTop_toBottomOf="@+id/rl_select_device_in_history_fragment"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_group_in_history_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/et_search_group_in_history_fragment"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+     <!--       <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/gl_start_icon_in_history_fragment"
+                app:layout_constraintTop_toTopOf="@+id/btn_device_history_fragment"
+                app:layout_constraintEnd_toEndOf="@+id/btn_device_history_fragment"
+                >
+
+                <ImageButton
+                    android:id="@+id/iv_delete_device_name_in_device_fragment"
+                    style="?android:buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:src="@drawable/baseline_close_24"
+                    android:visibility="visible"
+                    app:layout_constraintStart_toEndOf="@+id/gl_start_icon_in_history_fragment"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_device_in_history_fragment"
+                    />
+
+            </FrameLayout>-->
+
+
+
+            <TextView
+                android:id="@+id/txt_start_date_title_in_history_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/start_date"
+                android:textColor="@color/whiteLow"
+                android:fontFamily="@font/iran_sans"
+                android:textSize="12sp"
+                android:layout_marginStart="12dp"
+                app:layout_constraintTop_toBottomOf="@+id/rl_select_device_in_history_fragment"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_start_date_history_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:backgroundTint="@color/DarkBlue"
+                android:fontFamily="@font/iran_sans"
+                android:gravity="center_vertical|start"
+                android:paddingStart="12dp"
+                android:inputType="textCapCharacters"
+                android:paddingEnd="12dp"
+                android:text="@string/select_group"
+                android:textColor="@color/whiteLow"
+                android:textSize="12sp"
+                app:icon="@drawable/baseline_date_range_24"
+                app:iconGravity="start"
+                app:iconPadding="4dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_start_date_title_in_history_fragment"
+                app:layout_constraintWidth_percent="0.8" />
+
+            <TextView
+                android:id="@+id/txt_end_date_title_in_history_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/end_date"
+                android:textColor="@color/whiteLow"
+                android:fontFamily="@font/iran_sans"
+                android:layout_marginStart="12dp"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@+id/btn_start_date_history_fragment"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_end_date_history_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:backgroundTint="@color/DarkBlue"
+                android:fontFamily="@font/iran_sans"
+                android:gravity="center_vertical|start"
+                android:paddingStart="12dp"
+                android:inputType="textCapCharacters"
+                android:paddingEnd="12dp"
+                android:text="@string/select_group"
+                android:textColor="@color/whiteLow"
+                android:textSize="12sp"
+                app:icon="@drawable/baseline_date_range_24"
+                app:iconGravity="start"
+                app:iconPadding="4dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_end_date_title_in_history_fragment"
+                app:layout_constraintWidth_percent="0.8" />
+
+
+            <LinearLayout
+                android:id="@+id/ln_three_view_in_history_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/btn_end_date_history_fragment"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_today_in_history_fragment"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/iran_sans"
+                    android:textColor="@color/whiteLow"
+                    android:inputType="textCapCharacters"
+                    android:text="@string/today"
+                    android:backgroundTint="@color/DarkBlue"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_yeserday_in_history_fragment"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/iran_sans"
+                    android:textColor="@color/whiteLow"
+                    android:text="@string/yesterday"
+                    android:inputType="textCapCharacters"
+                    android:backgroundTint="@color/DarkBlue"/>
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_last_week_in_history_fragment"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/iran_sans"
+                    android:textColor="@color/whiteLow"
+                    android:text="@string/last_week"
+                    android:inputType="textCapCharacters"
+                    android:backgroundTint="@color/DarkBlue"/>
+
+            </LinearLayout>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_search_in_history_fragment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="10sp"
+                android:fontFamily="@font/iran_sans"
+                android:textColor="@color/whiteLow"
+                android:inputType="textCapCharacters"
+                app:icon="@drawable/baseline_search_24_history"
+                app:iconGravity="textStart"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:text="@string/search"
+                app:layout_constraintEnd_toStartOf="@+id/gl_middle_page_in_history_fragment"
+                android:backgroundTint="@color/blue_low"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ln_three_view_in_history_fragment"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_reset_in_history_fragment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:layout_marginEnd="12dp"
+                android:fontFamily="@font/iran_sans"
+                android:textColor="@color/whiteLow"
+                android:inputType="textCapCharacters"
+                app:icon="@drawable/baseline_brush_24"
+                app:iconGravity="textStart"
+                android:text="@string/reset"
+                android:backgroundTint="@color/DarkBlue"
+                app:layout_constraintStart_toEndOf="@+id/gl_middle_page_in_history_fragment"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btn_search_in_history_fragment"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_search_in_history_fragment"
+                />
+
+            <ProgressBar
+                android:id="@+id/progress_in_history_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gl_middle_page_in_history_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintGuide_percent="0.6"
+                android:orientation="vertical"/>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gl_start_icon_in_history_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.85"/>
+
+
+
+            <!-- <com.google.android.material.button.MaterialButton
+                 android:id="@+id/btn_devices_fragment"
+                 android:backgroundTint="@color/DarkBlue"               android:text="@string/devices"
+                 android:layout_marginStart="18dp"
+                 android:inputType="textCapCharacters"
+                 android:layout_marginEnd="18dp"
+                 android:fontFamily="@font/iran_sans"
+                 android:textSize="12sp"
+                 app:iconGravity="textStart"
+                 app:icon="@drawable/baseline_devices_other_24"
+                 app:iconPadding="8dp"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"/>
+
+             <LinearLayout
+                 android:id="@+id/ln_three_view_in_device_fragment"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_marginStart="18dp"
+                 android:layout_marginEnd="18dp"
+                 app:layout_constraintTop_toBottomOf="@+id/txt_status_device_in_device_fragment"
+                 app:layout_constraintEnd_toEndOf="parent"
+                 app:layout_constraintStart_toStartOf="parent">
+
+                 <com.google.android.material.button.MaterialButton
+                     android:id="@+id/btn_fences_in_monitor_fragment"
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:textSize="12sp"
+                     android:fontFamily="@font/iran_sans"
+                     android:textColor="@color/whiteLow"
+                     android:inputType="textCapCharacters"
+                     app:icon="@drawable/baseline_fence_24"
+                     app:iconGravity="textStart"
+                     android:text="@string/top_show_fence"
+                     android:backgroundTint="@color/DarkBlue"/>
+
+                 <com.google.android.material.button.MaterialButton
+                     android:id="@+id/btn_group_in_monitor_fragment"
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:textSize="12sp"
+                     android:fontFamily="@font/iran_sans"
+                     android:textColor="@color/whiteLow"
+                     app:iconGravity="textStart"
+                     app:icon="@drawable/baseline_groups_24"
+                     android:text="@string/menu_group"
+                     android:inputType="textCapCharacters"
+                     android:backgroundTint="@color/DarkBlue"/>
+
+
+             </LinearLayout>-->
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/showDeviceFragment"
+        android:icon="@drawable/baseline_devices_other_24"
+        android:title="@string/menu_devices" />
+
+    <item android:id="@+id/groupFragment"
+        android:icon="@drawable/baseline_groups_24"
+        android:enabled="true"
+        android:title="@string/menu_group" />
+
+    <item android:id="@+id/fencesFragment"
+        android:icon="@drawable/baseline_fence_24"
+        android:enabled="true"
+        android:title="@string/devices" />
+
+</menu>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/koja_nav"
+    app:startDestination="@id/serviceCarFragment">
+
+
+    <fragment
+        android:id="@+id/monitorFragment"
+        android:name="com.example.mapproject.ui.monitor.MonitorFragment"
+        android:label="fragment_tracking"
+        android:tag="monitorFragment"
+        >
+        <action
+            android:id="@+id/action_monitorFragment_to_hilt_ShowFencesFragment"
+            app:destination="@id/hilt_ShowFencesFragment" />
+        <action
+            android:id="@+id/action_monitorFragment_to_devicesFragment"
+            app:destination="@id/devicesFragment" />
+        <action
+            android:id="@+id/action_monitorFragment_to_groupFragment"
+            app:destination="@id/groupFragment" />
+        <action
+            android:id="@+id/action_monitorFragment_to_serviceCarFragment"
+            app:destination="@id/serviceCarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.mapproject.ui.history.HistoryFragment"
+        android:label="fragment_device"
+        tools:layout="@layout/history_fragment" />
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.mapproject.ui.fragments.CarServiceFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/monitor_fragment" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/serviceCarFragment"
+        android:name="com.example.mapproject.ui.fragments.TrackingFragment"
+        android:label="fragment_car_service"
+        tools:layout="@layout/fragment_car_service" />
+
+
+    <fragment
+        android:id="@+id/hilt_ShowFencesFragment"
+        android:name="com.example.mapproject.ui.fragments.ShowFencesFragment"
+        android:label="Hilt_ShowFencesFragment" >
+
+        <action
+            android:id="@+id/action_hilt_ShowFencesFragment_to_monitorFragment"
+            app:destination="@id/monitorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/devicesFragment"
+        android:name="com.example.mapproject.ui.devicesFragment.DevicesFragment"
+        android:label="fragment_devices"
+        tools:layout="@layout/fragment_devices" >
+        <action
+            android:id="@+id/action_devicesFragment_to_monitorFragment"
+            app:destination="@id/monitorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/groupFragment"
+        android:name="com.example.mapproject.ui.fragments.GroupFragment"
+        android:label="fragment_group"
+        tools:layout="@layout/fragment_group" />
+    <fragment
+        android:id="@+id/drawPolyGonCircleSaveDialog"
+        android:name="com.example.mapproject.ui.dialogs.DrawPolyGonCircleSaveDialog"
+        android:label="DrawPolyGonCircleSaveDialog" >
+        <action
+            android:id="@+id/action_drawPolyGonCircleSaveDialog_to_monitorFragment"
+            app:destination="@id/monitorFragment" />
+    </fragment>
+</navigation>

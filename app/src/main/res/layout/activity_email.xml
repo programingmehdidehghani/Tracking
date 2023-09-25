@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground_login"
+    tools:context=".ui.changeEmail.EmailActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_in_change_email_activity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/back_ground_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--  <androidx.appcompat.widget.AppCompatImageView
+                  android:id="@+id/iv_menu_in_activity_main"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="12dp"
+                  android:layout_marginEnd="12dp"
+                  android:padding="5dp"
+                  android:src="@drawable/baseline_menu_24"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintTop_toTopOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"/>-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/whiteLow"
+                app:layout_constraintEnd_toStartOf="@+id/gl_end_in_change_email"
+                app:layout_constraintStart_toEndOf="@+id/gl_start_in_change_email"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/top_change_email"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_back_press_in_change_email_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:padding="8dp"
+                android:src="@drawable/baseline_arrow_back_ios_new_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gl_start_in_change_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.4"/>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gl_end_in_change_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.6"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/txt_enter_number_in_email_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_in_change_email_activity"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="visible"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="22dp"
+        android:layout_marginStart="22dp"
+        android:text="@string/enter_email"/>
+
+    <EditText
+        android:id="@+id/et_email_in_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:padding="8dp"
+        android:visibility="visible"
+        android:background="@drawable/background_edit_text"
+        android:textColor="@color/whiteLow"
+        android:textColorHint="@color/white"
+        android:fontFamily="@font/iran_sans"
+        android:maxLength="40"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_enter_number_in_email_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+    <TextView
+        android:id="@+id/txt_enter_verify_in_email_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_in_change_email_activity"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="22dp"
+        android:layout_marginStart="22dp"
+        android:text="@string/write_your_verify_code"/>
+
+
+    <LinearLayout
+        android:id="@+id/ln_verify_code_in_email_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layoutDirection="ltr"
+        android:layout_marginTop="22dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_enter_verify_in_email_activity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_first_confirm_in_email_activity"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/background_edit_text_change_pass"
+            android:maxLength="1"
+            android:inputType="phone"
+            android:padding="5dp"
+            android:gravity="center"
+            tools:ignore="TextFields" />
+
+
+        <EditText
+            android:id="@+id/et_second_confirm_in_email_activity"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/background_edit_text_change_pass"
+            android:maxLength="1"
+            android:padding="5dp"
+            android:inputType="phone"
+            android:gravity="center"
+            tools:ignore="TextFields" />
+
+        <EditText
+            android:id="@+id/et_third_confirm_in_email_activity"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/background_edit_text_change_pass"
+            android:maxLength="1"
+            android:padding="5dp"
+            android:inputType="phone"
+            android:gravity="center"
+            tools:ignore="TextFields" />
+
+        <EditText
+            android:id="@+id/et_fourth_confirm_in_email_activity"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/background_edit_text_change_pass"
+            android:maxLength="1"
+            android:inputType="phone"
+            android:padding="5dp"
+            android:gravity="center"
+            tools:ignore="TextFields" />
+
+        <EditText
+            android:id="@+id/et_fifth_confirm_in_email_activity"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/background_edit_text_change_pass"
+            android:maxLength="1"
+            android:inputType="phone"
+            android:padding="5dp"
+            android:gravity="center"
+            />
+
+        <EditText
+            android:id="@+id/et_sixth_confirm_in_email_activity"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/background_edit_text_change_pass"
+            android:maxLength="1"
+            android:inputType="phone"
+            android:padding="5dp"
+            android:gravity="center"
+            tools:ignore="TextFields" />
+
+    </LinearLayout>
+
+
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_confirm_pass_in_email_activity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="@string/confirm_first_email"
+        android:fontFamily="@font/iran_sans"
+        android:backgroundTint="@color/back_btn"
+        android:layout_marginTop="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_email_in_activity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_confirm_verify_code_in_email_activity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="@string/confirm_verify_code"
+        android:visibility="gone"
+        android:fontFamily="@font/iran_sans"
+        android:backgroundTint="@color/back_btn"
+        android:layout_marginTop="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ln_verify_code_in_email_activity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ProgressBar
+        android:id="@+id/progress_in_email_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

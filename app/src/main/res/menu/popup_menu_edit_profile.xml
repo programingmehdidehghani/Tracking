@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/change_phone_number"
+        android:id="@+id/changePhoneNumber"
+        />
+
+    <item android:id="@+id/changeEmail"
+        android:enabled="true"
+        android:title="@string/change_email" />
+
+    <item android:id="@+id/changePassword"
+        android:enabled="true"
+        android:title="@string/change_main_pass_word" />
+
+    <item android:id="@+id/wallet_edit_profile"
+        android:enabled="true"
+        android:title="@string/wallet_drawer_edit_profile" />
+
+    <item android:id="@+id/alerts_edit_profile"
+        android:enabled="true"
+        android:title="@string/alert_drawer_edit_profile" />
+
+    <item android:id="@+id/messages_edit_profile"
+        android:enabled="true"
+        android:title="@string/message_drawer_edit_profile" />
+
+    <item android:id="@+id/orders_edit_profile"
+        android:enabled="true"
+        android:title="@string/orders_drawer_edit_profile" />
+
+    <item android:id="@+id/support_edit_profile"
+        android:enabled="true"
+        android:title="@string/support_drawer_edit_profile" />
+
+</menu>

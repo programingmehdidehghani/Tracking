@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/back_ground_login"
+    android:layout_height="50dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_user_in_header_in_monitor_fragment"
+        android:src="@drawable/user_menu_in_drawer"
+        android:layout_marginStart="18dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txt_user_name_in_menu_monitor_fragment"
+        android:layout_width="wrap_content"
+        android:textColor="@color/whiteLow"
+        android:fontFamily="@font/iran_sans"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/iv_user_in_header_in_monitor_fragment"
+        app:layout_constraintTop_toTopOf="@+id/iv_user_in_header_in_monitor_fragment"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_user_in_header_in_monitor_fragment"
+        android:layout_marginStart="12dp"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

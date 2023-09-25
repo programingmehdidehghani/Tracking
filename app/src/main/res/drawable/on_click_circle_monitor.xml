@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/on_click_icon_osm" />
+    <item android:drawable="@drawable/picture_draw_circle_map_click"
+        android:gravity="center" />
+</layer-list>

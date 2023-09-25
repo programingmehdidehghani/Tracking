@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground_login"
+    tools:context=".ui.activities.MonitorDetailActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_devices_in_monitor_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/iran_sans"
+        android:text="@string/devices"
+        android:layout_marginTop="18dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/txt_top_devices_in_monitor_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/iran_sans"
+        android:text="@string/device"
+        app:layout_constraintTop_toBottomOf="@+id/btn_devices_in_monitor_detail"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="18dp"
+        />
+
+    <TextView
+        android:id="@+id/txt_situation_devices_in_monitor_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/iran_sans"
+        android:text="@string/situation"
+        app:layout_constraintTop_toBottomOf="@+id/txt_top_devices_in_monitor_activity"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="18dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinner_devices_in_monitor_fragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:spinnerMode="dropdown"
+        android:textColor="@color/whiteLow"
+        android:background="@drawable/background_edit_text"
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="18dp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="@+id/txt_top_devices_in_monitor_activity"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_top_devices_in_monitor_activity"
+        app:layout_constraintStart_toEndOf="@+id/txt_top_devices_in_monitor_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/txt_default_in_monitor_activity_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_situation_devices_in_monitor_activity"
+        android:text="@string/default_device"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="18dp"
+        android:layout_margin="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_default_in_monitor_activity_detail"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

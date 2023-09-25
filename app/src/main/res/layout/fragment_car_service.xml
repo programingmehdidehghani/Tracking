@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/back_ground_login"
+    tools:context=".ui.fragments.CarServiceFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/car"
+        app:layout_constraintStart_toEndOf="@+id/gl_start_car_in_service_car"
+        app:layout_constraintEnd_toStartOf="@+id/gl_end_car_in_service_car"
+        app:layout_constraintTop_toBottomOf="@+id/gl_top_car"
+        app:layout_constraintBottom_toTopOf="@+id/gl_bottom_car"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_temperature_in_service_fragment"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="18dp"
+        app:layout_constraintStart_toEndOf="@+id/gl_start_car_in_service_car"
+        app:layout_constraintTop_toTopOf="@+id/iv_status_in_service_fragment"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_status_in_service_fragment"
+        android:src="@drawable/temperature"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_battery_in_service_fragment"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="18dp"
+        app:layout_constraintEnd_toStartOf="@+id/gl_end_car_in_service_car"
+        app:layout_constraintTop_toTopOf="@+id/iv_temperature_in_service_fragment"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_temperature_in_service_fragment"
+        android:src="@drawable/battery"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_engine_in_service_fragment"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_battery_in_service_fragment"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_battery_in_service_fragment"
+        android:src="@drawable/engain"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_status_in_service_fragment"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="28dp"
+        android:layout_marginStart="28dp"
+        android:src="@drawable/status_connecttion"/>
+
+    <TextView
+        android:id="@+id/txt_status_connection_in_service_car_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ارتباط : آنلاین"
+        android:fontFamily="@font/iran_sans"
+        android:textSize="12sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="14dp"
+        android:textColor="@color/whiteLow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_status_in_service_fragment"/>
+
+    <TextView
+        android:id="@+id/txt_temperature_in_service_car_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="حرارت"
+        android:fontFamily="@font/iran_sans"
+        android:textSize="12sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="30dp"
+        android:textColor="@color/whiteLow"
+        app:layout_constraintStart_toEndOf="@+id/gl_start_car_in_service_car"
+        app:layout_constraintTop_toBottomOf="@+id/iv_temperature_in_service_fragment"/>
+
+    <TextView
+        android:id="@+id/txt_battery_in_service_car_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="باتری"
+        android:fontFamily="@font/iran_sans"
+        android:textSize="12sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="18dp"
+        android:textColor="@color/whiteLow"
+        app:layout_constraintEnd_toStartOf="@+id/gl_end_car_in_service_car"
+        app:layout_constraintTop_toBottomOf="@+id/iv_battery_in_service_fragment"
+        />
+
+    <TextView
+        android:id="@+id/txt_engine_in_service_car_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="موتور:خاموش"
+        android:fontFamily="@font/iran_sans"
+        android:textSize="12sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="18dp"
+        android:textColor="@color/whiteLow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_engine_in_service_fragment"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_brake_in_service_fragment"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/gl_bottom_car"
+        android:layout_marginStart="28dp"
+        android:src="@drawable/brakepad"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_insurance_in_service_fragment"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="18dp"
+        app:layout_constraintStart_toEndOf="@+id/gl_start_car_in_service_car"
+        app:layout_constraintTop_toTopOf="@+id/iv_brake_in_service_fragment"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_brake_in_service_fragment"
+        android:src="@drawable/insurance"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_air_in_service_fragment"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="18dp"
+        app:layout_constraintEnd_toStartOf="@+id/gl_end_car_in_service_car"
+        app:layout_constraintTop_toTopOf="@+id/iv_insurance_in_service_fragment"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_insurance_in_service_fragment"
+        android:src="@drawable/airfilter"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_oil_in_service_fragment"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_air_in_service_fragment"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_air_in_service_fragment"
+        android:src="@drawable/oil"/>
+
+    <TextView
+        android:id="@+id/text_brake_in_service_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/whiteLow"
+        android:fontFamily="@font/iran_sans"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/iv_brake_in_service_fragment"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="25dp"
+        android:text="لنت ترمز"/>
+
+    <TextView
+        android:id="@+id/txt_detail_brake_in_service_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 KM"
+        android:textColor="@color/RedLow"
+        android:fontFamily="@font/iran_sans"
+        android:textSize="12sp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_brake_in_service_fragment"
+        />
+
+    <TextView
+        android:id="@+id/text_insurance_in_service_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/whiteLow"
+        android:fontFamily="@font/iran_sans"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/iv_brake_in_service_fragment"
+        app:layout_constraintStart_toEndOf="@+id/gl_start_car_in_service_car"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="25dp"
+        android:text="بیمه"/>
+
+    <TextView
+        android:id="@+id/text_detail_insurance_in_service_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#4CAF50"
+        android:layout_marginStart="15dp"
+        android:fontFamily="@font/iran_sans"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/text_insurance_in_service_fragment"
+        app:layout_constraintStart_toEndOf="@+id/gl_start_car_in_service_car"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_detail_brake_in_service_fragment"
+        android:text="409 روز"/>
+
+    <TextView
+        android:id="@+id/text_air_in_service_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/whiteLow"
+        android:fontFamily="@font/iran_sans"
+        android:textSize="12sp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/iv_air_in_service_fragment"
+        app:layout_constraintEnd_toStartOf="@+id/gl_end_car_in_service_car"
+        android:text="فیلتر هوا"/>
+
+    <TextView
+        android:id="@+id/txt_detail_air_in_service_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/iran_sans"
+        android:textSize="12sp"
+        android:text="0 KM"
+        android:textColor="@color/RedLow"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_air_in_service_fragment"
+        app:layout_constraintEnd_toStartOf="@+id/gl_end_car_in_service_car"
+        app:layout_constraintBottom_toBottomOf="@+id/text_detail_insurance_in_service_fragment"
+        />
+
+    <TextView
+        android:id="@+id/text_oil_in_service_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/whiteLow"
+        android:fontFamily="@font/iran_sans"
+        android:textSize="12sp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toTopOf="@+id/text_air_in_service_fragment"
+        app:layout_constraintTop_toBottomOf="@+id/iv_oil_in_service_fragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="روغن"/>
+
+    <TextView
+        android:id="@+id/txt_detail_oil_in_service_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/iran_sans"
+        android:textSize="12sp"
+        android:text="0 KM"
+        android:textColor="@color/RedLow"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_oil_in_service_fragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_detail_air_in_service_fragment"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_top_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_bottom_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_start_car_in_service_car"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_end_car_in_service_car"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.72"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

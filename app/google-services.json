@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "562133615222",
+    "project_id": "peppy-aileron-384111",
+    "storage_bucket": "peppy-aileron-384111.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:562133615222:android:6079dd662c79f9eccf5557",
+        "android_client_info": {
+          "package_name": "com.example.mapproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJwXwsxG-ws_asslONpcDHta0MXqXkFw0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

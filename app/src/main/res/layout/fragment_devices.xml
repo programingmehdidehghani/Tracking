@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground_login"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.devicesFragment.DevicesFragment">
+
+
+
+    <TextView
+        android:id="@+id/txt_device_in_device_fragment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="22dp"
+        android:layout_marginStart="18dp"
+        android:text="@string/device"
+        android:textSize="12sp"
+        android:textColor="@color/whiteLow"
+        android:fontFamily="@font/iran_sans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ln_parent_device_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_device_in_device_fragment"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/txt_show_group_in_device_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/whiteLow"
+            android:textColorHint="@color/white"
+            android:maxLength="40"
+            android:hint="@string/select_group"
+            android:focusable="false"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:fontFamily="@font/iran_sans"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textSize="12sp"
+            android:background="@drawable/background_edit_text" />
+
+        <ImageButton
+            android:id="@+id/iv_delete_device_name_in_device_fragment"
+            android:layout_marginStart="-60dp"
+            style="?android:buttonBarButtonStyle"
+            android:paddingBottom="5dp"
+            android:visibility="gone"
+            android:src="@drawable/baseline_close_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_search_group_in_fragment_device"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"
+        android:textColor="@color/dark_gray"
+        android:textColorHint="@color/dark_gray"
+        android:maxLength="40"
+        android:drawableStart="@drawable/baseline_search_24"
+        android:hint="@string/search"
+        android:focusable="true"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:fontFamily="@font/iran_sans"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="8dp"
+        android:visibility="gone"
+        android:textSize="12sp"
+        android:background="@drawable/background_dark_back_ground"
+        app:layout_constraintBottom_toTopOf="@+id/rv_group_in_device_fragment"
+        app:layout_constraintTop_toBottomOf="@+id/ln_parent_device_fragment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_group_in_device_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/et_search_group_in_fragment_device"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+    <TextView
+        android:id="@+id/txt_status_device_in_device_fragment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_search_group_in_fragment_device"
+        android:layout_marginTop="22dp"
+        android:layout_marginStart="18dp"
+        android:text="@string/situation"
+        android:textSize="12sp"
+        android:textColor="@color/whiteLow"
+        android:fontFamily="@font/iran_sans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:id="@+id/ln_three_view_in_device_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_status_device_in_device_fragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_all_status_in_device_fragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/whiteLow"
+            android:inputType="textCapCharacters"
+            android:layout_marginEnd="4dp"
+            android:text="@string/all_alerts"
+            android:backgroundTint="@color/DarkBlue"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_status_online_in_device_fragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/whiteLow"
+            app:iconGravity="start"
+            android:layout_marginEnd="4dp"
+            android:text="@string/status_online"
+            android:inputType="textCapCharacters"
+            android:backgroundTint="@color/DarkBlue"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_status_offline_in_device_fragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/status_offline"
+            android:inputType="textCapCharacters"
+            app:iconGravity="start"
+            android:textColor="@color/whiteLow"
+            android:layout_weight="1"
+            android:backgroundTint="@color/DarkBlue"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_status_in_device_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/ln_three_view_in_device_fragment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ProgressBar
+        android:id="@+id/progress_in_device_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

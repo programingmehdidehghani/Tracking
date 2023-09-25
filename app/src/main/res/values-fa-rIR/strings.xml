@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="true">کجا</string>
+
+
+    ###### main Fragment
+    <string name="txt_users">کاربران</string>
+    <string name="txt_device">دستگاه</string>
+    <string name="txt_history">تاریخچه</string>
+    <string name="txt_monitors">مانیتور</string>
+
+
+    ###### login activity
+    <string name="txt_btn_login" translatable="true" formatted="true">ورود</string>
+    <string name="txt_user_name_login" translatable="true">نام کاربری</string>
+    <string name="txt_password_login" translatable="true">کلمه عبور</string>
+    <string name="txt_email_phone" translatable="true">ایمیل یا شماره همراه</string>
+    <string name="txt_forget_pass" translatable="true">رمز عبور خود را فراموش کرده اید</string>
+    <string name="txt_top_pass" translatable="false">فراموشی کلمه عبور</string>
+    <string name="txt_mobile_number_user_name">شماره همراه یا نام کاربری</string>
+    <string name="txt_enter_user">ورود کاربران</string>
+    <string name="txt_send_code">ارسال کد</string>
+    <string name="txt_verify_code_user">کد ۶ رقمی ارسال شده به %1$s را وارد کنید</string>
+    <string name="txt_recode_again_verify_code">ارسال مجدد کد بعد از %1$s ثانیه</string>
+    <string name="txt_change_user_name">تغییر نام کاربری</string>
+    <string name="txt_new_pass">کلمه عبور جدید</string>
+    <string name="txt_confirm_new_pass">تکرار کلمه عبور جدید</string>
+    <string name="txt_confirm_code">تایید کد</string>
+    <string name="txt_resend_code_again">ارسال مجدد کد</string>
+    <string name="txt_user_name_pass_word_is_empty">نام کاربری و رمزعبور خود را وارد نمایید</string>
+    <string name="txt_forget_pass_user_name_is_empty">شماره همراه یا نام کاربری را وارد نمایید</string>
+
+    ###### main activity
+    <string name="setting_menu">تنظیمات</string>
+    <string name="wallet_menu">کیف پول</string>
+    <string name="orders_menu">دستورات</string>
+    <string name="support_menu">پشتیبانی</string>
+    <string name="exit_menu">خروج</string>
+
+
+    ###### EditProfile activity
+    <string name="top_activity">ویرایش پروفایل</string>
+    <string name="user_name">نام کاربری:</string>
+    <string name="email">پست الکترونیک:</string>
+    <string name="phone_number">شماره همراه:</string>
+    <string name="user_last_name">نام و نام خانوادگی:</string>
+    <string name="location">موقعیت زمانی:</string>
+    <string name="map">نقشه:</string>
+    <string name="capacity">ظرفیت:</string>
+    <string name="distance">فاصله:</string>
+    <string name="temperature">دما:</string>
+    <string name="save">ذخیره</string>
+
+    ## translate Type Maps, TimeZone, Opacity, Distance, Temperture
+    <string name="open_street_map">نقشه راه OSM</string>
+    <string name="google_streets">نقشه راه</string>
+    <string name="google_terrain">نقشه DEM</string>
+    <string name="google_satellite">عکس ماهواره ای</string>
+    <string name="google_hybrid">نقشه ترکیبی</string>
+    <string name="google_traffic">نقشه ترافیکی</string>
+    <string name="liter">لیتر</string>
+    <string name="gallon">گالن</string>
+
+
+
+    ###### Popup Menu EditProfile
+    <string name="change_phone_number">تغییر شماره همراه</string>
+    <string name="change_email">تغییر پست الکترونیک</string>
+    <string name="change_main_pass_word">تغییر کلمه عبور</string>
+    <string name="change_back_ground">تغییر پس زمینه</string>
+    <string name="wallet_drawer_edit_profile">کیف پول</string>
+    <string name="alert_drawer_edit_profile">هشدارها</string>
+    <string name="message_drawer_edit_profile">پیام ها</string>
+    <string name="orders_drawer_edit_profile">دستورات</string>
+    <string name="support_drawer_edit_profile">پشتیبانی</string>
+
+
+    ###### changePassword Activity
+    <string name="top_change_pass">تغییر کلمه عبور</string>
+    <string name="change_current_pass">کلمه عبور فعلی</string>
+    <string name="new_pass">کلمه عبور جدید</string>
+    <string name="confirm_pass">تآیید کلمه عبور</string>
+    <string name="btn_confirm">ذخیره</string>
+
+    ###### changeEmail Activity
+    <string name="top_change_email">تغییر پست الکترونیک</string>
+    <string name="enter_email">ایمیل خود را وارد کنید</string>
+    <string name="confirm_first_email">تآیید</string>
+    <string name="confirm_verify_code">تآیید کد</string>
+    <string name="write_your_verify_code">کد تآیید به ایمیل خود را وارد نمایید</string>
+    <string name="toast_write_your_verify_code">کد تآیید را کامل وارد کنید</string>
+    <string name="toast_write_your_email">پست الکترونیک خود را وارد کنید</string>
+
+
+    ###### changePhoneNumber Activity
+    <string name="top_change_phone_number">تغییر شماره همراه</string>
+    <string name="write_phone_number">شماره موبایل خود را وارد نمایید</string>
+    <string name="confirm_first_phone_number">تآیید</string>
+    <string name="confirm_verify_code_phone_number">تآیید کد</string>
+    <string name="write_your_verify_code_phone_number">کد تآیید را وارد نمایید</string>
+    <string name="toast_write_your_verify_code_phone_number">کد تآیید را کامل وارد کنید</string>
+    <string name="toast_write_your_email_phone_number">شماره همراه خود را وارد کنید</string>
+
+
+    ###### alerts Activity
+    <string name="top_alerts">هشدارها</string>
+    <string name="device_name">نام دستگاه:</string>
+    <string name="device_imei">IMEI</string>
+    <string name="type">نوع:</string>
+    <string name="device_location">موقعیت:</string>
+    <string name="send_time">زمان ارسال:</string>
+    <string name="device_status">وضعیت:</string>
+    <string name="device_Action">عملیات:</string>
+    <string name="read_at">خوانده شده</string>
+    <string name="unread_at">خوانده نشده</string>
+
+    ## types alerts
+    <string name="all_alerts">همه</string>
+    <string name="over_speed">سرعت غیر مجاز</string>
+    <string name="vibration">لرزش یا حرکت</string>
+    <string name="general">عمومی</string>
+    <string name="sos">وضعیت اضطراری</string>
+    <string name="fall">سقوط</string>
+    <string name="low_battery">ضعیف بودن باتری</string>
+    <string name="power_off">خاموش شدن دستگاه</string>
+    <string name="power_on">روشن شدن دستگاه</string>
+    <string name="door">باز شدن درب خودرو</string>
+    <string name="geofence_enter">ورود به محدوده</string>
+    <string name="geofence_exit">خروج از محدوده</string>
+    <string name="accident">تصادف</string>
+    <string name="hard_acceleration">شتاب زیاد</string>
+    <string name="hard_braking">ترمز شدید</string>
+    <string name="hard_cornering">پیچ خطرناک</string>
+    <string name="power_cut">قطع شدن برق دستگاه</string>
+    <string name="tampering">تلاش برای دستکاری کردن دستگاه</string>
+    <string name="acc_off">خاموش شدن خودرو</string>
+    <string name="acc_on">روشن شدن خودرو</string>
+
+    ###### Monitor Fragment
+    <string name="change_map">عوض کردن نقشه</string>
+    <string name="add_polygon">ترسیم چند ضلعی</string>
+    <string name="devices">دستگاه ها</string>
+    <string name="device">دستگاه</string>
+    <string name="situation">وضعیت دستگاه</string>
+    <string name="default_device">پیش فرض</string>
+    <string name="status_device_offline">آفلاین</string>
+    <string name="status_device_online">پارک شده</string>
+    <string name="status_device_moving">در حال حرکت</string>
+    <string name="top_device">دستگاه</string>
+    <string name="speed">سرعت</string>
+    <string name="detail_speed">km/h %1$s</string>
+    <string name="last_connect">آخرین اتصال</string>
+    <string name="last_location">آخرین موقعیت</string>
+    <string name="name_poly_gon_dialog">نام</string>
+    <string name="description_poly_gon">توضیحات</string>
+    <string name="choose_color">انتخاب رنگ</string>
+    <string name="save_poly_gon">ثبت</string>
+    <string name="cancel">انصراف</string>
+    <string name="toast_select_color">رنگ مورد نظر را انتخاب کنید</string>
+    <string name="top_show_fence">حصارها</string>
+    <string name="fence_no">حصاری وجود ندارد!</string>
+    <string name="menu_fences">حصارها</string>
+    <string name="menu_devices">دستگاه ها</string>
+    <string name="menu_group">گروه ها</string>
+    <string name="address_location">مشاهده آدرس</string>
+    <string name="toast_polygon">محدوده را ترسیم کنید</string>
+    <string name="toast_circle">محدوده دایره ای را ترسیم کنید</string>
+    <string name="loading">در حال بارگذاری</string>
+    <string name="address_top">آدرس</string>
+    <string name="move_speed">مسیریابی متحرک</string>
+
+
+    ###### Device Fragment
+    <string name="status_online">آنلاین</string>
+    <string name="status_offline">آفلاین</string>
+    <string name="select_group">انتخاب کنید</string>
+    <string name="search">جستجو</string>
+    <string name="toast_result_search_group">موردی یافت نشد</string>
+
+
+    ###### Group Fragment
+    <string name="et_name_group">مثل : سامانه کجا</string>
+    <string name="toast_enter_name_group">نام گروه را وارد کنید</string>
+    <string name="toast_permission_delete_group">شما مجوز حذف این گروه را ندارید</string>
+    <string name="toast_permission_edit_group">شما مجوز ویرایش این گروه را ندارید</string>
+
+
+    ###### History Fragment
+    <string name="start_date">شروع</string>
+    <string name="end_date">پایان</string>
+    <string name="today">امروز</string>
+    <string name="yesterday">دیروز</string>
+    <string name="last_week">هفته گذشته</string>
+    <string name="reset">پاک کردن</string>
+
+
+    ###### Common Strings
+    <string name="no_internet">اینترنت خود را چک کنید</string>
+
+
+</resources>

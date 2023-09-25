@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground_login"
+    tools:context=".ui.editProfile.EditProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar_in_edit_profile_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/back_ground_login"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:id="@+id/txt_top_profile_in_edit_profile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/iran_sans"
+                            android:textColor="@color/whiteLow"
+                            app:layout_constraintEnd_toStartOf="@+id/gl_end_in_edit_profile"
+                            app:layout_constraintStart_toEndOf="@+id/gl_start_in_edit_profile"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:text="@string/top_activity"/>
+
+                        <!--<androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/iv_back_press_in_edit_profile_activity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:src="@drawable/baseline_arrow_back_ios_new_24"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/txt_top_profile_in_edit_profile"
+                            app:layout_constraintBottom_toBottomOf="@+id/txt_top_profile_in_edit_profile"
+                            />-->
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:src="@drawable/baseline_menu_24"
+                            android:padding="8dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/txt_top_profile_in_edit_profile"
+                            app:layout_constraintBottom_toBottomOf="@+id/txt_top_profile_in_edit_profile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/gl_start_in_edit_profile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent="0.4"/>
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/gl_end_in_edit_profile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent="0.6"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.appcompat.widget.Toolbar>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_image_profile_in_edit_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/toolbar_in_edit_profile_activity"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@color/whiteLow"
+                        android:src="@drawable/baseline_person_24"
+                        android:id="@+id/iv_image_profile_in_edit_profile"
+                        />
+                </androidx.cardview.widget.CardView>
+
+
+
+                <TextView
+                    android:id="@+id/text_current_pass_in_edit_profile_activity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:textColor="@color/whiteLow"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/iran_sans"
+                    android:text="@string/user_name"
+                    android:layout_marginStart="12dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/gl_end_vertical_in_edit_profile_activity"
+                    app:layout_constraintTop_toBottomOf="@+id/cv_image_profile_in_edit_profile"
+                    />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_user_name_in_edit_profile_activity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginStart="12dp"
+                    android:textColor="@color/whiteLow"
+                    android:textColorHint="@color/white"
+                    android:maxLength="40"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:fontFamily="@font/iran_sans"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingTop="12dp"
+                    android:inputType="textPassword"
+                    android:paddingBottom="8dp"
+                    android:textSize="14sp"
+                    android:background="@drawable/background_edit_text"
+                    app:layout_constraintTop_toBottomOf="@+id/text_current_pass_in_edit_profile_activity"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/text_new_pass_in_edit_profile_activity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/iran_sans"
+                    android:textColor="@color/whiteLow"
+                    android:textSize="12sp"
+                    android:text="@string/email"
+                    android:layout_marginStart="12dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/gl_end_vertical_in_edit_profile_activity"
+                    app:layout_constraintTop_toBottomOf="@+id/et_user_name_in_edit_profile_activity"
+                    />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_email_in_edit_profile_activity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginStart="12dp"
+                    android:fontFamily="@font/iran_sans"
+                    android:textColor="@color/whiteLow"
+                    android:textColorHint="@color/white"
+                    android:maxLength="40"
+                    android:ellipsize="end"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:singleLine="true"
+                    android:inputType="textPassword"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="8dp"
+                    android:textSize="14sp"
+                    android:background="@drawable/background_edit_text"
+                    app:layout_constraintTop_toBottomOf="@+id/text_new_pass_in_edit_profile_activity"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/text_phone_number_in_edit_profile_activity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/whiteLow"
+                    android:fontFamily="@font/iran_sans"
+                    android:textSize="12sp"
+                    android:text="@string/phone_number"
+                    android:layout_marginStart="12dp"
+                    app:layout_constraintEnd_toStartOf="@+id/gl_end_vertical_in_edit_profile_activity"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_email_in_edit_profile_activity"
+                    />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_phone_number_in_edit_profile_activity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginStart="12dp"
+                    android:textColor="@color/whiteLow"
+                    android:textColorHint="@color/white"
+                    android:maxLength="40"
+                    android:fontFamily="@font/iran_sans"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:inputType="textPassword"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="8dp"
+                    android:textSize="14sp"
+                    android:background="@drawable/background_edit_text"
+                    app:layout_constraintTop_toBottomOf="@+id/text_phone_number_in_edit_profile_activity"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/text_last_name_in_edit_profile_activity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/whiteLow"
+                    android:fontFamily="@font/iran_sans"
+                    android:text="@string/user_last_name"
+                    android:layout_marginStart="12dp"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toStartOf="@+id/gl_end_vertical_in_edit_profile_activity"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_phone_number_in_edit_profile_activity"
+                    />
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_last_name_in_edit_profile_activity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginStart="12dp"
+                    android:fontFamily="@font/iran_sans"
+                    android:textColor="@color/whiteLow"
+                    android:textColorHint="@color/white"
+                    android:maxLength="40"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="8dp"
+                    android:textSize="14sp"
+                    android:background="@drawable/background_edit_text"
+                    app:layout_constraintTop_toBottomOf="@+id/text_last_name_in_edit_profile_activity"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/text_location_in_edit_profile_activity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/whiteLow"
+                    android:fontFamily="@font/iran_sans"
+                    android:textSize="12sp"
+                    android:text="@string/location"
+                    android:layout_marginStart="12dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_last_name_in_edit_profile_activity"
+                    />
+
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spinner_time_zone_in_edit_fragment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/background_edit_text"
+                    android:gravity="center"
+                    android:textColor="@color/whiteLow"
+                    android:textSize="15sp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginStart="12dp"
+                    app:layout_constraintTop_toBottomOf="@+id/text_location_in_edit_profile_activity"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+                <TextView
+                    android:id="@+id/text_map_in_edit_profile_activity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/whiteLow"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/iran_sans"
+                    android:text="@string/map"
+                    android:layout_marginStart="12dp"
+                    app:layout_constraintEnd_toStartOf="@+id/gl_end_vertical_in_edit_profile_activity"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spinner_time_zone_in_edit_fragment"
+                    />
+
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spinner_map_in_profile_fragment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:spinnerMode="dropdown"
+                    android:textColor="@color/whiteLow"
+                    android:background="@drawable/background_edit_text"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginStart="12dp"
+                    android:gravity="center"
+                    app:layout_constraintTop_toBottomOf="@+id/text_map_in_edit_profile_activity"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <TextView
+                    android:id="@+id/text_capacity_in_edit_profile_activity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/whiteLow"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/iran_sans"
+                    android:text="@string/capacity"
+                    android:layout_marginStart="12dp"
+                    app:layout_constraintEnd_toStartOf="@+id/gl_end_vertical_in_edit_profile_activity"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spinner_map_in_profile_fragment"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/radio_capacity_in_edit_profile_activity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/Widget.RadioButton"
+                    app:layout_constraintTop_toBottomOf="@+id/text_capacity_in_edit_profile_activity"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:backgroundTint="@color/RedLow"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <TextView
+                    android:id="@+id/text_distance_in_edit_profile_activity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/whiteLow"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/iran_sans"
+                    android:text="@string/distance"
+                    app:layout_constraintEnd_toStartOf="@+id/gl_end_vertical_in_edit_profile_activity"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/radio_capacity_in_edit_profile_activity"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/radio_distance_in_edit_profile_activity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/Widget.RadioButton"
+                    app:layout_constraintTop_toBottomOf="@+id/text_distance_in_edit_profile_activity"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="12dp"
+                    />
+
+                <TextView
+                    android:id="@+id/text_temperature_in_edit_profile_activity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:textColor="@color/whiteLow"
+                    android:fontFamily="@font/iran_sans"
+                    android:textSize="12sp"
+                    android:text="@string/temperature"
+                    android:layout_marginStart="12dp"
+                    app:layout_constraintEnd_toStartOf="@+id/gl_end_vertical_in_edit_profile_activity"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/radio_distance_in_edit_profile_activity"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/radio_temperature_in_edit_profile_activity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/Widget.RadioButton"
+                    app:layout_constraintTop_toBottomOf="@+id/text_temperature_in_edit_profile_activity"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_edit_in_edit_profile_activity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/back_btn"
+                    android:fontFamily="@font/iran_sans"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:textSize="12sp"
+                    android:text="@string/save"
+                    app:layout_constraintTop_toBottomOf="@+id/radio_temperature_in_edit_profile_activity"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    />
+
+                <ProgressBar
+                    android:id="@+id/progress_in_edit_profile_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gl_start_vertical_in_edit_profile_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.7"/>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gl_end_vertical_in_edit_profile_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.35"/>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gl_start_btn_in_edit_profile_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.32"/>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gl_middle_in_edit_profile_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
